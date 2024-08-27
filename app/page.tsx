@@ -1,95 +1,55 @@
+import { Box, Center, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main>
+      <Flex as="header" minH="40px" w="full" position="sticky" top={0}>
+        <Box>
+          <Text
+            fontFamily="mulish"
+            fontSize={["3xl", "6xl"]}
+            fontWeight={1000}
+            fontStyle="italic"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
+            WingDing
+          </Text>
+        </Box>
+      </Flex>
+      <Flex grow={1}>
+        <SimpleGrid
+          columns={[1, 2]}
+          w="full"
+          marginTop={[5, 10, 20]}
+          spacing={[10, null]}
         >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          <Box>
+            <Center padding={[0, 10, 20]}>
+              <Text fontFamily="roboto" fontSize={[18, 30]}>
+                We're crafting WingDing with a passionate community in mind, and
+                we need your help to bring this vision to life. Support our
+                journey and unlock exclusive rewards by backing our Kickstarter
+                campaign. Together, we can make WingDing the premier destination
+                for VR adventurers seeking the ultimate flight experience.
+              </Text>
+            </Center>
+          </Box>
+          <Box>
+            <Center>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/9FoBV1h--8k?si=H4SsU66yCLFeb7kB"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </Center>
+          </Box>
+        </SimpleGrid>
+      </Flex>
     </main>
   );
 }
