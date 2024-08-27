@@ -26,11 +26,12 @@ export default function Home() {
           <Box>
             <Center padding={[0, 10, 20]}>
               <Text fontFamily="roboto" fontSize={[18, 30]}>
-                We're crafting WingDing with a passionate community in mind, and
-                we need your help to bring this vision to life. Support our
-                journey and unlock exclusive rewards by backing our Kickstarter
-                campaign. Together, we can make WingDing the premier destination
-                for VR adventurers seeking the ultimate flight experience.
+                We&apos;re crafting WingDing with a passionate community in
+                mind, and we need your help to bring this vision to life.
+                Support our journey and unlock exclusive rewards by backing our
+                Kickstarter campaign. Together, we can make WingDing the premier
+                destination for VR adventurers seeking the ultimate flight
+                experience.
               </Text>
             </Center>
           </Box>
