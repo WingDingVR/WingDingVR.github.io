@@ -1,10 +1,21 @@
-import { Box, Center, Flex, SimpleGrid, Text } from "@chakra-ui/react";
+"use client";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import {
+  Box,
+  Button,
+  Center,
+  Flex,
+  SimpleGrid,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import bgImage from "../public/wingding-bg.jpg";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <Flex as="header" minH="40px" w="full" position="sticky" top={0}>
+      <Flex as="header" minH="40px" w="full" position="static" top={0}>
         <Box>
           <Text
             fontFamily="mulish"
@@ -32,13 +43,28 @@ export default function Home() {
           spacing={[10, null]}
         >
           <Center padding={[0, 2, 4]}>
-            <Text fontFamily="roboto" fontSize={[18, 24, 32]} color="white">
-              We&apos;re crafting WingDing with a passionate community in mind,
-              and we need your help to bring this vision to life. Support our
-              journey and unlock exclusive rewards by backing our Kickstarter
-              campaign. Together, we can make WingDing the premier destination
-              for VR adventurers seeking the ultimate flight experience.
-            </Text>
+            <VStack spacing={[2, 4]}>
+              <Text fontFamily="roboto" fontSize={[18, 24, 32]} color="white">
+                We&apos;re crafting WingDing with a passionate community in
+                mind, and we need your help to bring this vision to life.
+                Support our journey and unlock exclusive rewards by backing our
+                Kickstarter campaign. Together, we can make WingDing the premier
+                destination for VR adventurers seeking the ultimate flight
+                experience.
+              </Text>
+              <Link
+                href="https://www.kickstarter.com/projects/wingding/wingding-vr-social-play-and-flight-experience/"
+                target="_blank"
+              >
+                <Button
+                  leftIcon={<ExternalLinkIcon />}
+                  size={["sm", "md", "lg"]}
+                  colorScheme="teal"
+                >
+                  Kickstarter
+                </Button>
+              </Link>
+            </VStack>
           </Center>
           <Center padding={[0, 2, 4]}>
             <iframe
