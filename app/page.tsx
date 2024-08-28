@@ -19,7 +19,7 @@ export default function Home() {
       <Flex
         as="main"
         flex={1}
-        backgroundImage={`url(${bgImage.src})`}
+        backgroundImage={`linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgImage.src})`}
         backgroundSize="cover"
         backgroundPosition="center"
       >
@@ -31,8 +31,8 @@ export default function Home() {
           paddingX={[4, 8, null]}
           spacing={[10, null]}
         >
-          <Center padding={[0, 4, 8]}>
-            <Text fontFamily="roboto" fontSize={[16, 24, 32]} color="white">
+          <Center padding={[0, 2, 4]}>
+            <Text fontFamily="roboto" fontSize={[18, 24, 32]} color="white">
               We&apos;re crafting WingDing with a passionate community in mind,
               and we need your help to bring this vision to life. Support our
               journey and unlock exclusive rewards by backing our Kickstarter
@@ -40,10 +40,10 @@ export default function Home() {
               for VR adventurers seeking the ultimate flight experience.
             </Text>
           </Center>
-          <Center padding={[0, 4, 8]}>
+          <Center padding={[0, 2, 4]}>
             <iframe
-              width="560"
-              height="315"
+              width="640"
+              height="360"
               src="https://www.youtube.com/embed/9FoBV1h--8k?si=H4SsU66yCLFeb7kB"
               title="YouTube video player"
               style={{ border: "0" }}
