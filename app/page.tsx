@@ -27,7 +27,7 @@ export default function Home() {
           <Image
             src="/wingding-logo.png"
             alt="WingDing Logo"
-            boxSize={["128px", "256px", "320px"]}
+            w={[256, 384, 768]}
           />
         </Center>
       </Flex>
