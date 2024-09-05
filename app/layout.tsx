@@ -4,7 +4,7 @@ import { Flex } from "@chakra-ui/react";
 
 export const metadata: Metadata = {
   title: "WingDing VR",
-  description: "Flying. Friends. Fun.",
+  description: "Flight! Friends! Fun!",
 };
 
 export default function RootLayout({
