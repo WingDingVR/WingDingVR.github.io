@@ -34,7 +34,7 @@ export default function Home() {
       <Flex
         as="main"
         flex={1}
-        backgroundImage={`linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.5)), url(${bgImage.src})`}
+        backgroundImage={`linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(${bgImage.src})`}
         backgroundSize="cover"
         backgroundPosition="center"
       >
