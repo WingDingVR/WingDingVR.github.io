@@ -5,6 +5,22 @@ import { Flex } from "@chakra-ui/react";
 export const metadata: Metadata = {
   title: "WingDing VR",
   description: "Flight! Friends! Fun!",
+  openGraph: {
+    title: "WingDing",
+    description: "Flight! Friends! Fun! - WingDing is the ultimate VR flying experience",
+    url: 'https://wingdingvr.com',
+    siteName: "WingDing VR",
+    type: 'website',
+    images: [
+      {
+        url: 'https://wingdingvr.com/images/logo.jpg',
+        secureUrl: 'https://wingdingvr.com/images/logo.jpg',
+        width: 717,
+        height: 720,
+        alt: 'Logo for WingDing VR',
+      }
+    ]
+  }
 };
 
 export default function RootLayout({
